@@ -1,14 +1,14 @@
-.hero{
+.hero {
     height: 100vh;
     display: grid;
     grid: "container-logo header" 6rem
     "container-logo presentation"/
     40% 60%;
 
-    .header{
+    & .header {
         grid-area: header;
         
-        .menu {
+        & .menu {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -16,29 +16,29 @@
             font-size: 1.8rem;
         }
 
-        .menu-item{
+        & .menu-item {
             padding: 1rem;
             border-radius: .5rem;
             transition: .3s ease-in-out;
         }
 
-        .menu-item:hover{
+        & .menu-item:hover {
             background-color: var(--secondary-color);
             transform: scale(1.1);
         }
     }
 
-    .container-logo{
+    .container-logo {
         grid-area: container-logo;
         background-color: #ffffff39;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 105%;
-        border-bottom-right-radius: 5%;
-        border-bottom-left-radius: 5%;
+        height: calc(100% + 3rem);
+        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
 
-        .box-image {
+        & .box-image {
             max-width: 19rem;
             max-height: 11rem;
             margin-left: 3rem;
@@ -46,34 +46,34 @@
         }
     }
 
-    .presentation{
+    .presentation {
         grid-area: presentation;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
 
-        .name{
+        & .name {
             font-size: 3rem;
             font-weight: 700;
         }
 
-        .profession {
+        & .profession {
             font-size: 2rem;
             margin-bottom: 10rem;
         }
 
-        .networks {
+        & .networks {
             display: flex;
             flex-direction: row;
             font-size: 3rem;
             gap: 1rem;
 
-            .icon{
+            & .icon {
                 transition: transform .3s ease-in-out;
             }
 
-            .icon:hover{
+            & .icon:hover {
                 color: var(--secondary-color);
                 
             }
