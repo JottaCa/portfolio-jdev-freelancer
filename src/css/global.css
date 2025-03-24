@@ -1,7 +1,16 @@
 
 html {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: var(--primary-color);
     color: var(--text-color);
-    scroll-behavior: smooth;
+
+    & .title {
+        font-size: 3.4rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+    }
 }

@@ -1,16 +1,18 @@
 .about {
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 5rem 6rem;
 
     & .about-me {
         width: 50%;
         margin-right: 7rem;
 
-        & .title {
+        /* & .title {
             font-size: 3.4rem;
             font-weight: 700;
             margin-bottom: 4rem;
-        }
+        } */
         
         & h3 {
             font-size: 2.7rem;

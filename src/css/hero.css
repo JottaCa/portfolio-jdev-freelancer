@@ -70,12 +70,11 @@
             gap: 1rem;
 
             & .icon {
-                transition: transform .3s ease-in-out;
+                transition: .3s ease-in-out;
             }
 
             & .icon:hover {
                 color: var(--secondary-color);
-                
             }
         }
     }
