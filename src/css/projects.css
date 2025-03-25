@@ -22,6 +22,7 @@
             opacity: .5;
             text-indent: 100%;
             overflow: hidden;
+            transition: .3s ease-in-out;
         }
 
         & .arrow:hover {
@@ -41,15 +42,15 @@
             & .project-image {
                 display: none;
             }
-
-            & .project-image:first-child {
+            
+            & .desktop {
                 width: 64%;
             }
-
-            & .project-image:last-child {
+            
+            & .mobile {
                 width: 36%;
             }
-
+            
             & .project-image.active {
                 display: block;
             }

@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 6rem;
+
+    & .highlight {
+        width: 18rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 0 auto 2rem;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        & .contact-networks {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & .networks {
+                font-size: 2rem;
+            }
+
+        }
+        
+        & .email {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & .email i {
+            font-size: 2rem;
+        }
+    }
+}

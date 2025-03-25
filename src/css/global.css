@@ -1,4 +1,3 @@
-
 html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
@@ -7,10 +6,29 @@ html {
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
+}
 
-    & .title {
-        font-size: 3.4rem;
-        font-weight: 700;
-        margin-bottom: 4rem;
-    }
+.title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.box-image.logo {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.networks {
+    display: flex;
+    font-size: 3rem;
+    gap: 1rem;
+}
+
+.icon {
+    transition: .3s ease-in-out;
+}
+
+.icon:hover {
+    color: var(--secondary-color);
 }
