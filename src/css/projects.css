@@ -33,26 +33,27 @@
             transform: rotate(180deg);
         }
 
-        & .project-images {
+        & .project-container {
             display: flex;
             max-width: 58rem;
             max-height: 21rem;
             margin: 0 1.5rem;
 
-            & .project-image {
+            & .project-images {
                 display: none;
+                transition: .5s ease-in-out;
+
+                & img:first-child {
+                    width: 64%;
+                }
+
+                & img:last-child {
+                    width: 36%;
+                }
             }
-            
-            & .desktop {
-                width: 64%;
-            }
-            
-            & .mobile {
-                width: 36%;
-            }
-            
-            & .project-image.active {
-                display: block;
+
+            & .project-images.active {
+                display: flex;
             }
         }
     }
