@@ -9,9 +9,9 @@ body {
 }
 
 .title {
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .box-image.logo {
@@ -31,4 +31,18 @@ body {
 
 .icon:hover {
     color: var(--secondary-color);
+}
+
+p {
+    overflow-y: auto;
+}
+
+@keyframes pulsate {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }

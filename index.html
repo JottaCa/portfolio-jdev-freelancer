@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./src/css/about.css">
     <link rel="stylesheet" href="./src/css/projects.css">
     <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <title>jDev Freelancer</title>
 </head>
@@ -34,6 +35,8 @@
     <main class="main">
         <section class="hero">
             <header class="header">
+                <button class="open-close-menu" id="open-close-menu"><i class="fas fa-bars"></i></button>
+                <!-- troca class fa-bars por fa-times para exibir o icone close -->
                 <ul class="menu">
                     <li class="menu-item"><a href="#about">Sobre mim</a></li>
                     <li class="menu-item"><a href="#projects">Projetos</a></li>
@@ -63,15 +66,19 @@
                 </ul>
             </div>
         </section>
-        
+
         <section class="about" id="about">
             <div class="about-me">
                 <h2 class="title">Sobre mim</h2>
-                <h3>Meu nome é Jonathan e sou desenvolvedor.</h3>
-                <p class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </p>
+                <h3 class="under-title">Meu nome é Jonathan 
+                    e sou desenvolvedor.</h3>
             </div>
+            <p class="text-about-me">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+            </p>
 
             <div class="picture">
                 <figure class="box-image profile-picture">
@@ -127,6 +134,7 @@
         <span>© 2025 - Todos os direitos reservados</span>
     </footer>
 
+    <script src="./src/js/mobile-menu.js"></script>
     <script src="./src/js/projects.js"></script>
 </body>
 

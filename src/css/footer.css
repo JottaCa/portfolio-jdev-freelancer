@@ -3,13 +3,14 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 6rem;
+    padding: 5rem 6rem 2rem;
 
     & .highlight {
         width: 18rem;
         font-size: 1.7rem;
         font-weight: 700;
         margin: 0 auto 2rem;
+        animation: pulsate 2s infinite alternate ease-in-out;
     }
 
     .contact {

@@ -1,35 +1,41 @@
 .about {
-    display: flex;
+    display: grid;
+    grid: "aboute-me picture"
+        "text-about-me picture" / 50% 50%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 5rem 6rem;
 
     & .about-me {
-        width: 50%;
-        margin-right: 7rem;
-        
-        & h3 {
-            font-size: 2.7rem;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-            margin-bottom: 1.8rem;
-        }
+        grid-area: aboute-me;
+        height: fit-content;
+        margin-right: 2rem;
 
-        & .text {
-            max-height: 370px;
-            font-size: 1.5rem;
-            line-height: 1.4;
-            text-align: justify;
+        & .under-title {
+            font-size: 2.5rem;
+            font-weight: 500;
+            white-space: pre-line;
+            margin-bottom: 2.5rem;
         }
     }
-    
+
+    & .text-about-me {
+        grid-area: text-about-me;
+        margin-right: 2rem;
+        max-height: 23.1rem;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: justify;
+        text-indent: 2em;
+    }
+
     & .picture {
-        width: 50%;
+        grid-area: picture;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        
+
         & .box-image {
             width: 80%;
             max-width: 31rem;

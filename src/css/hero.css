@@ -7,7 +7,21 @@
 
     & .header {
         grid-area: header;
-        
+        position: relative;
+
+        & .open-close-menu {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            right: 0;
+            font-size: 1.5rem;
+            color: var(--light-color);
+            background-color: transparent;
+        }
+
         & .menu {
             display: flex;
             justify-content: space-evenly;
@@ -15,7 +29,7 @@
             height: 100%;
             font-size: 1.8rem;
         }
-
+       
         & .menu-item {
             padding: 1rem;
             border-radius: .5rem;
@@ -25,10 +39,23 @@
         & .menu-item:hover {
             background-color: var(--secondary-color);
             transform: scale(1.1);
+        } 
+
+        & .menu-humburguer {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 12rem;
+            min-height: 9.5rem;
+            top: 2.5rem;
+            right: 0;
+            align-items: center;
+            background-color: #737373;
+            transition: .3s ease-in-out;
         }
     }
 
-    .container-logo {
+    & .container-logo {
         grid-area: container-logo;
         background-color: #ffffff39;
         display: flex;
@@ -41,12 +68,11 @@
         & .box-image {
             max-width: 19rem;
             max-height: 11rem;
-            margin-left: 3rem;
-            margin-right: 3rem;
+            margin: 3rem;
         }
     }
 
-    .presentation {
+    & .presentation {
         grid-area: presentation;
         display: flex;
         flex-direction: column;

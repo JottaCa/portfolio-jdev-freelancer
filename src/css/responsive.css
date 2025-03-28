@@ -1,0 +1,151 @@
+@media (max-width: 1190px) {
+    .about {
+        grid: "aboute-me picture"
+            "text-about-me text-about-me" / 50% 50%;
+        gap: 2rem 0;
+
+        & .about-me {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 0;
+
+            & .under-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        & .text-about-me {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .hero {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+
+        & .header {
+            grid-area: header;
+
+            & .menu {
+                height: 6rem;
+                background-color: #ffffff39;
+            }
+
+            & .menu-item:hover {
+                background-color: var(--primary-color);
+            }
+        }
+
+        & .container-logo {
+            height: auto;
+        }
+
+        & .presentation {
+            margin: 0;
+            padding: 5rem 4rem 0;
+
+            & .profession {
+                margin-bottom: 5rem
+            }
+        }
+    }
+
+    .about,
+    .projects {
+        padding: 5rem 4rem 0;
+    }
+}
+
+@media (max-width: 810px) {
+    html {
+        font-size: 14px;
+    }
+
+    .footer .contact {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .about {
+        grid: "aboute-me"
+            "picture"
+            "text-about-me " / 100%;
+        /* padding: 5rem 4rem; */
+
+        & .about-me .under-title {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    html {
+        font-size: 12px;
+    }
+
+    .hero {
+
+        & .header {
+            & .menu {
+                display: none;
+            }
+
+            & .open-close-menu {
+                display: flex;
+            }
+        }
+
+        & .presentation {
+            margin: 0;
+            padding: 3rem 1.5rem 0;
+
+            & .profession {
+                margin-bottom: 3rem
+            }
+        }
+    }
+
+    .about {
+        & .about-me {
+            & .title {
+                text-align: center;
+                margin-bottom: 2.5rem;
+            }
+
+            & .under-title {
+                margin: 0;
+            }
+        }
+    }
+
+    .about,
+    .projects {
+        padding: 3rem 1.5rem 0;
+    }
+
+    .projects .projects-carousel .project-container {
+        min-height: fit-content;
+        
+        & .project-images {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 1rem;
+
+            & img:first-child {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 3rem 1.5rem 1rem;
+    }
+}
